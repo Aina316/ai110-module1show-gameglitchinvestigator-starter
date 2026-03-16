@@ -47,6 +47,7 @@ I fixed the difficulty bug by increasing the number range for Hard mode so that 
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
+![Screenshot of Updated Game](images/screenshot.png)
       
 
 ## 🚀 Stretch Features

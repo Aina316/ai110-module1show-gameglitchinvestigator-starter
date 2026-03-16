@@ -26,12 +26,28 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+      Game Purpose
+The purpose of the game is to let users guess a randomly generated secret number based on a selected difficulty level. The game provides feedback after each guess (too high, too low, or correct) and is meant to be an interactive way to practice logic and state management using Streamlit.
 - [ ] Detail which bugs you found.
+      Bugs Found
+
+Incorrect hint feedback
+The hint messages were reversed. When my guess was lower than the secret number, the game incorrectly told me to “Go Lower,” and when my guess was higher, it told me to “Go Higher.”
+
+“New Game” button not functioning
+The “New Game” button did not properly reset the game state. The number of allowed attempts was not reset, and there was no way to start a new round after finishing a game.
+
+Difficulty setting not working correctly
+The difficulty selection had no effect on gameplay, as the secret number range remained 1–100 regardless of the chosen difficulty. Additionally, the difficulty ranges were misarranged: Normal mode had a larger range than Hard mode, making Normal unintentionally more difficult than Hard.
 - [ ] Explain what fixes you applied.
+      Fixes Applied
+I fixed the difficulty bug by increasing the number range for Hard mode so that it was more challenging than Normal. I also stored the secret number in Streamlit’s session state and ensured it was only generated once per game, which gave the game consistent behavior across user interactions.
+      
 
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
+      
 
 ## 🚀 Stretch Features
 
